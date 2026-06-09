@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Futuro del Egresado Mexicano en la Era de la IA</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; color: #1a1a1a; }
+
+        .hero {
+            background: #006847;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h1 { font-size: 32px; margin-bottom: 10px; }
+        .hero p { font-size: 16px; opacity: 0.9; }
+        .hero .flag { font-size: 48px; margin-bottom: 16px; }
+
+        .nav {
+            background: white;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            padding: 16px;
+            border-bottom: 0.5px solid #e0e0e0;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav a {
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid #e0e0e0;
+            color: #1a1a1a;
+        }
+        .nav a:hover { background: #006847; color: white; border-color: #006847; }
+
+        .acto {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .acto-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #006847;
+        }
+        .acto-num {
+            background: #006847;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .acto-titulo { font-size: 22px; font-weight: 600; }
+        .acto-subtitulo { font-size: 14px; color: #666; margin-top: 2px; }
+
+        .grafica-wrap {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            border: 0.5px solid #e0e0e0;
+        }
+        .grafica-titulo {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+        iframe {
+            width: 100%;
+            height: 520px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 13px;
+            margin-top: 60px;
+        }
+        .footer p { opacity: 0.7; margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="flag">🇲🇽</div>
+    <h1>El futuro del egresado mexicano en la era de la IA</h1>
+    <p>Una historia de datos para recién egresados de carreras impactadas por IA</p>
+  </div>
+
+  <nav class="nav">
+    <a href="#acto1">🌍 Acto 1 — ¿Dónde estamos?</a>
+    <a href="#acto2">🚦 Acto 2 — ¿Qué está pasando?</a>
+    <a href="#acto3">🔮 Acto 3 — ¿Hacia dónde vamos?</a>
+  </nav>
+
+  <!-- ACTO 1 -->
+  <section class="acto" id="acto1">
+    <div class="acto-header">
+      <div class="acto-num">1</div>
+      <div>
+        <p class="acto-titulo">¿Dónde estamos?</p>
+        <p class="acto-subtitulo">México comparado con el mundo en desempleo juvenil (2020-2025)</p>
+      </div>
+    </div>
+    <div class="grafica-wrap">
+      <p class="grafica-titulo">📊 Desempleo juvenil por país — animado por año</p>
+      <iframe src="grafica1_barras.html"></iframe>
+    </div>
+    <div class="grafica-wrap">
+      <p class="grafica-titulo">🌍 Mapa mundial — ¿dónde está México?</p>
+      <iframe src="grafica2_mapa.html"></iframe>
+    </div>
+  </section>
+
+  <!-- ACTO 2 -->
+  <section class="acto" id="acto2">
+    <div class="acto-header">
+      <div class="acto-num">2</div>
+      <div>
+        <p class="acto-titulo">¿Qué está pasando?</p>
+        <p class="acto-subtitulo">El semáforo de industrias — ¿en cuál trabajarías tú?</p>
+      </div>
+    </div>
+    <div class="grafica-wrap">
+      <p class="grafica-titulo">🚦 El semáforo de la estabilidad laboral (2020-2026)</p>
+      <iframe src="grafica3_semaforo.html"></iframe>
+    </div>
+  </section>
+
+  <!-- ACTO 3 -->
+  <section class="acto" id="acto3">
+    <div class="acto-header">
+      <div class="acto-num">3</div>
+      <div>
+        <p class="acto-titulo">¿Hacia dónde vamos?</p>
+        <p class="acto-subtitulo">Predicciones y tendencias del mercado laboral (2026-2028)</p>
+      </div>
+    </div>
+    <div class="grafica-wrap">
+      <p class="grafica-titulo">📈 Tendencia del empleo tech en EE.UU. con predicción</p>
+      <iframe src="grafica4_prediccion.html"></iframe>
+    </div>
+    <div class="grafica-wrap">
+      <p class="grafica-titulo">🇲🇽 Proyección del desempleo juvenil en México 2026-2028</p>
+      <iframe src="grafica5_mexico.html"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Proyecto de Visualización de Datos y Narrativa</p>
+    <p>Fuentes: Banco Mundial · Layoffs.fyi · FRED · NewsAPI</p>
+    <p>Datos 2020-2026</p>
+  </footer>
+
+</body>
+</html>
